@@ -12,7 +12,7 @@
 **                                                                      **
 *************************************************************************/
 
-#include    "StdAfx.h"
+#include    "PreCompile.h"
 #include    "Wrapper.h"
 
 
