@@ -82,7 +82,8 @@
     <ClCompile Include="..\..\Core\Lib\Common\ScoreDocument.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\BowlingSettings.h" />
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\BowlingProject.h" />
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\BowlingTypes.h" />
     <ClInclude Include="..\..\Core\Include\BowlingScore\Common\DocumentFile.h" />
     <ClInclude Include="..\..\Core\Include\BowlingScore\Common\ScoreDocument.h" />
   </ItemGroup>
