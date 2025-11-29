@@ -93,6 +93,9 @@
     <ClInclude Include="..\Wrapper\resource.h" />
     <ClInclude Include="..\Wrapper\PreCompile.h" />
     <ClInclude Include="..\Wrapper\Wrapper.h" />
+
+    <ClInclude Include="..\Wrapper\Common\DocumentFile.h" />
+    <ClInclude Include="..\Wrapper\Common\ScoreDocument.h" />
   </ItemGroup>
 
   <ItemGroup>
@@ -101,6 +104,9 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\Wrapper\Wrapper.cpp" />
+
+    <ClCompile Include="..\Wrapper\Common\DocumentFile.cpp" />
+    <ClCompile Include="..\Wrapper\Common\ScoreDocument.cpp" />
   </ItemGroup>
 
   <ItemGroup>
