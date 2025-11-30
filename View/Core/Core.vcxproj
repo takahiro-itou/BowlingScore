@@ -78,7 +78,6 @@
 
   <ItemGroup>
     <ClCompile Include="..\..\Core\Lib\Common\DocumentFile.cpp" />
-    <ClCompile Include="..\..\Core\Lib\Common\SampleDocument.cpp" />
     <ClCompile Include="..\..\Core\Lib\Common\ScoreDocument.cpp" />
   </ItemGroup>
   <ItemGroup>
