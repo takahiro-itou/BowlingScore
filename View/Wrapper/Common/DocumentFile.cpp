@@ -12,15 +12,50 @@
 **                                                                      **
 *************************************************************************/
 
-#pragma once
+#include    "PreCompile.h"
+#include    <msclr/marshal_cppstd.h>
 
-#include    "BowlingScore/Common/BowlingTypes.h"
+#include    "DocumentFile.h"
 
-using namespace System;
+#include    <string>
+
 
 namespace  BsWrap  {
 namespace  Common  {
 
+//----------------------------------------------------------------
+//    インスタンスを初期化する
+//  （デフォルトコンストラクタ）。
+//
+
+DocumentFile::DocumentFile()
+    : m_ptrObj { new WrapTarget() }
+{
+}
+
+//----------------------------------------------------------------
+//    インスタンスを破棄する
+//  （デストラクタ）。
+//
+
+DocumentFile::~DocumentFile()
+{
+    this->!DocumentFile();
+}
+
+//----------------------------------------------------------------
+//    インスタンスを破棄する
+//  （ファイナライザ）。
+//
+
+DocumentFile::!DocumentFile()
+{
+    if ( this->m_ptrObj ) {
+        delete  this->m_ptrObj;
+        this->m_ptrObj  = nullptr;
+    }
+}
+
 
 }   //  End of namespace  Common
-}   //  End of namespace  BsWrap
+}   //  End of namespace  SampleWrapper

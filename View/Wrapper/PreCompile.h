@@ -14,13 +14,9 @@
 
 #pragma once
 
-#include    "BowlingScore/Common/BowlingTypes.h"
+#if !defined( BSWRAPPER_INCLUDED_PRE_COMPILE_H )
+#    define   BSWRAPPER_INCLUDED_PRE_COMPILE_H
 
-using namespace System;
+// プリコンパイルするヘッダーをここに追加します
 
-namespace  BsWrap  {
-namespace  Common  {
-
-
-}   //  End of namespace  Common
-}   //  End of namespace  BsWrap
+#endif
