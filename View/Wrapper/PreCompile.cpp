@@ -12,15 +12,4 @@
 **                                                                      **
 *************************************************************************/
 
-#pragma once
-
-#include    "BowlingScore/Common/BowlingTypes.h"
-
-using namespace System;
-
-namespace  BsWrap  {
-namespace  Common  {
-
-
-}   //  End of namespace  Common
-}   //  End of namespace  BsWrap
+#include    "PreCompile.h"

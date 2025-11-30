@@ -21,15 +21,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Core\Lib\Common\SampleDocument.cpp">
+    <ClCompile Include="..\..\Core\Lib\Common\DocumentFile.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Lib\Common\ScoreDocument.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Core\Include\Sample\Common\SampleDocument.h">
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\BowlingProject.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Core\Include\Sample\Common\SampleSettings.h">
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\BowlingTypes.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\DocumentFile.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Include\BowlingScore\Common\ScoreDocument.h">
       <Filter>Header Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
