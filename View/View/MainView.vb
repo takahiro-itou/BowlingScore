@@ -1,10 +1,9 @@
-﻿Public Class Form1
+﻿Public Class MainView
 
 Private Sub RunCount(ByVal message As String)
-    Dim result As Integer
-    Dim outText As String
+    ' Dim result As Integer
+    ' Dim outText As String
     ' Dim objWrapper As SampleWrapper.Common.SampleDocument = New SampleWrapper.Common.SampleDocument()
-
 End Sub
 
 Private Sub mnuFileExit_Click(sender As Object, e As EventArgs) Handles _
