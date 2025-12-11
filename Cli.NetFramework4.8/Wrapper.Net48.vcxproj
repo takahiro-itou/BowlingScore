@@ -90,33 +90,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ClInclude Include="..\View\Wrapper\resource.h" />
-    <ClInclude Include="..\View\Wrapper\PreCompile.h" />
-    <ClInclude Include="..\View\Wrapper\Wrapper.h" />
+    <ClInclude Include="..\Wrapper\resource.h" />
+    <ClInclude Include="..\Wrapper\PreCompile.h" />
+    <ClInclude Include="..\Wrapper\Wrapper.h" />
 
-    <ClInclude Include="..\View\Wrapper\Common\DocumentFile.h" />
-    <ClInclude Include="..\View\Wrapper\Common\ScoreDocument.h" />
+    <ClInclude Include="..\Wrapper\Common\DocumentFile.h" />
+    <ClInclude Include="..\Wrapper\Common\ScoreDocument.h" />
   </ItemGroup>
 
   <ItemGroup>
-    <ClCompile Include="..\View\Wrapper\AssemblyInfo.cpp" />
-    <ClCompile Include="..\View\Wrapper\PreCompile.cpp">
+    <ClCompile Include="..\Wrapper\AssemblyInfo.cpp" />
+    <ClCompile Include="..\Wrapper\PreCompile.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\View\Wrapper\Wrapper.cpp" />
+    <ClCompile Include="..\Wrapper\Wrapper.cpp" />
 
-    <ClCompile Include="..\View\Wrapper\Common\DocumentFile.cpp" />
-    <ClCompile Include="..\View\Wrapper\Common\ScoreDocument.cpp" />
+    <ClCompile Include="..\Wrapper\Common\DocumentFile.cpp" />
+    <ClCompile Include="..\Wrapper\Common\ScoreDocument.cpp" />
   </ItemGroup>
 
   <ItemGroup>
-    <Text Include="..\View\Wrapper\ReadMe.txt" />
+    <Text Include="..\Wrapper\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\View\Wrapper\app.rc" />
+    <ResourceCompile Include="..\Wrapper\app.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\View\Wrapper\app.ico" />
+    <Image Include="..\Wrapper\app.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.vcxproj">
