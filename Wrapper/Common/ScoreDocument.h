@@ -107,7 +107,7 @@ public:
 //
 private:
 
-    typedef     Sample::Common::ScoreDocument   WrapTarget;
+    typedef     BsCore::Common::ScoreDocument   WrapTarget;
 
     WrapTarget  *   m_ptrObj;
 };
