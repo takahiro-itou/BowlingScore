@@ -16,7 +16,9 @@
 
 #include    "BowlingScore/Common/DocumentFile.h"
 
-using namespace System;
+#include    "BowlingTypes.h"
+#include    "ScoreDocument.h"
+
 
 namespace  BsWrap  {
 namespace  Common  {
