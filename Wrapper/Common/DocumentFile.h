@@ -16,7 +16,9 @@
 
 #include    "BowlingScore/Common/DocumentFile.h"
 
-using namespace System;
+#include    "BowlingTypes.h"
+#include    "ScoreDocument.h"
+
 
 namespace  BsWrap  {
 namespace  Common  {
@@ -85,6 +87,37 @@ public:
 //
 //    Public Member Functions.
 //
+public:
+
+    //----------------------------------------------------------------
+    /**   データをテキストファイルから読み込む。
+    **
+    **  @param [in] fileName    ファイル名。
+    **  @param[out] ptrDoc      ドキュメントを格納する変数。
+    **  @return     エラーコードを返す。
+    **      -   異常終了の場合は、
+    **          エラーの種類を示す非ゼロ値を返す。
+    **      -   正常終了の場合は、ゼロを返す。
+    **/
+    ErrCode
+    readFromTextFile(
+            System::String^     fileName,
+            ScoreDocument^%     ptrDoc);
+
+    //----------------------------------------------------------------
+    /**   データをテキストファイルに書き込む。
+    **
+    **  @param [in] objDoc      ドキュメント。
+    **  @param [in] fileName    ファイル名。
+    **  @return     エラーコードを返す。
+    **      -   異常終了の場合は、
+    **          エラーの種類を示す非ゼロ値を返す。
+    **      -   正常終了の場合は、ゼロを返す。
+    **/
+    ErrCode
+    saveToTextFile(
+            ScoreDocument^      objDoc,
+            System::String^     fileName);
 
 //========================================================================
 //
@@ -107,7 +140,7 @@ public:
 //
 private:
 
-    typedef     Sample::Common::DocumentFile    WrapTarget;
+    typedef     BsCore::Common::DocumentFile    WrapTarget;
 
     WrapTarget  *   m_ptrObj;
 };
