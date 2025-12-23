@@ -25,4 +25,19 @@
 
 namespace  BsWrap  {
 
+//----------------------------------------------------------------
+/**
+**    エラーコード。
+**/
+
+public  enum class  ErrCode
+{
+    SUCCESS,
+    FAILURE,
+    INDEX_OUT_OF_RANGE,
+    FILE_OPEN_ERROR,
+    FILE_IO_ERROR,
+    FILE_INVALID_FORMAT,
+};
+
 }   //  End of namespace  BsWrap
