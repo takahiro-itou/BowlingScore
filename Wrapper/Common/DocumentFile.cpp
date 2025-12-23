@@ -23,6 +23,16 @@
 namespace  BsWrap  {
 namespace  Common  {
 
+//========================================================================
+//
+//    DocumentFile  class.
+//
+
+//========================================================================
+//
+//    Constructor(s) and Destructor.
+//
+
 //----------------------------------------------------------------
 //    インスタンスを初期化する
 //  （デフォルトコンストラクタ）。
@@ -56,6 +66,70 @@ DocumentFile::!DocumentFile()
     }
 }
 
+
+//========================================================================
+//
+//    Public Member Functions (Implement Pure Virtual).
+//
+
+//========================================================================
+//
+//    Public Member Functions (Overrides).
+//
+
+//========================================================================
+//
+//    Public Member Functions (Pure Virtual Functions).
+//
+
+//========================================================================
+//
+//    Public Member Functions (Virtual Functions).
+//
+
+//========================================================================
+//
+//    Public Member Functions.
+//
+
+//----------------------------------------------------------------
+//    データをテキストファイルから読み込む。
+//
+
+ErrCode
+DocumentFile::readFromTextFile(
+        System::String^     fileName,
+        ScoreDocument^%     ptrDoc)
+{
+    return ( ErrCode::FAILURE );
+}
+
+//----------------------------------------------------------------
+//    データをテキストファイルに書き込む。
+//
+
+ErrCode
+DocumentFile::saveToTextFile(
+        ScoreDocument^      objDoc,
+        System::String^     fileName)
+{
+    return ( ErrCode::FAILURE );
+}
+
+//========================================================================
+//
+//    Accessors.
+//
+
+//========================================================================
+//
+//    Protected Member Functions.
+//
+
+//========================================================================
+//
+//    For Internal Use Only.
+//
 
 }   //  End of namespace  Common
 }   //  End of namespace  SampleWrapper
