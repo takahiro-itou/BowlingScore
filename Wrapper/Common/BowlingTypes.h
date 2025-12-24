@@ -47,4 +47,18 @@ public  enum class  ErrCode
 
 typedef     BsCore::Boolean     Boolean;
 
+inline  Boolean
+toNativeBoolean(
+        System::Boolean b)
+{
+    return ( static_cast<Boolean>(b) );
+}
+
+inline  System::Boolean
+fromNativeBoolean(
+        Boolean b)
+{
+    return ( b != BsCore::BOOL_FALSE );
+}
+
 }   //  End of namespace  BsWrap
