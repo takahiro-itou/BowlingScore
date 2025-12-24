@@ -40,4 +40,25 @@ public  enum class  ErrCode
     FILE_INVALID_FORMAT = BsCore::ErrCode::FILE_INVALID_FORMAT,
 };
 
+//========================================================================
+//
+//    ブール型。
+//
+
+typedef     BsCore::Boolean     Boolean;
+
+inline  Boolean
+toNativeBoolean(
+        System::Boolean b)
+{
+    return ( static_cast<Boolean>(b) );
+}
+
+inline  System::Boolean
+fromNativeBoolean(
+        Boolean b)
+{
+    return ( b != BsCore::BOOL_FALSE );
+}
+
 }   //  End of namespace  BsWrap
