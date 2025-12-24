@@ -45,6 +45,6 @@ public  enum class  ErrCode
 //    ブール型。
 //
 
-typedef     BsCore::Boolean     Boolean
+typedef     BsCore::Boolean     Boolean;
 
 }   //  End of namespace  BsWrap
