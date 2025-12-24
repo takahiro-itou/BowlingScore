@@ -88,6 +88,7 @@
     <ClInclude Include="..\Wrapper\PreCompile.h" />
     <ClInclude Include="..\Wrapper\Wrapper.h" />
 
+    <ClInclude Include="..\Wrapper\Common\BowlingTypes.h" />
     <ClInclude Include="..\Wrapper\Common\DocumentFile.h" />
     <ClInclude Include="..\Wrapper\Common\ScoreDocument.h" />
   </ItemGroup>

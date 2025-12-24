@@ -90,6 +90,23 @@ public:
 //
 //    Accessors.
 //
+public:
+
+    //----------------------------------------------------------------
+    /**   ネイティブのインスタンスを取得する。
+    **
+    **  @return     アンマネージド型の参照。
+    **/
+    BsCore::Common::ScoreDocument  &
+    toNativeInstance();
+
+    //----------------------------------------------------------------
+    /**   ネイティブのインスタンスを取得する。
+    **
+    **  @return     アンマネージド型のポインタ。
+    **/
+    BsCore::Common::ScoreDocument  *
+    toNativePointer();
 
 //========================================================================
 //
@@ -107,7 +124,7 @@ public:
 //
 private:
 
-    typedef     Sample::Common::ScoreDocument   WrapTarget;
+    typedef     BsCore::Common::ScoreDocument   WrapTarget;
 
     WrapTarget  *   m_ptrObj;
 };
