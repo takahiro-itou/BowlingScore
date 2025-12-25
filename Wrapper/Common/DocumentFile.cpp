@@ -113,7 +113,11 @@ DocumentFile::saveToTextFile(
         ScoreDocument^      objDoc,
         System::String^     fileName)
 {
-    return ( ErrCode::FAILURE );
+    const   BsCore::ErrCode
+        retVal = WrapTarget::saveToTextFile(
+                    objDoc->toNativeInsance(),
+                    marshal_as<std::string>(fileName));
+    return ( static_cast<ErrCode>(retVal) );
 }
 
 //========================================================================
