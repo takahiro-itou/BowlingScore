@@ -115,7 +115,7 @@ DocumentFile::saveToTextFile(
 {
     const   BsCore::ErrCode
         retVal = this->m_ptrObj->saveToTextFile(
-                    objDoc->toNativeInsance(),
+                    objDoc->toNativeInstance(),
                     msclr::interop::marshal_as<std::string>(fileName)
         );
     return ( static_cast<ErrCode>(retVal) );
