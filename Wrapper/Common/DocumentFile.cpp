@@ -114,9 +114,10 @@ DocumentFile::saveToTextFile(
         System::String^     fileName)
 {
     const   BsCore::ErrCode
-        retVal = WrapTarget::saveToTextFile(
+        retVal = this->m_ptrObj->saveToTextFile(
                     objDoc->toNativeInsance(),
-                    marshal_as<std::string>(fileName));
+                    msclr::interop::marshal_as<std::string>(fileName)
+        );
     return ( static_cast<ErrCode>(retVal) );
 }
 
