@@ -101,7 +101,12 @@ DocumentFile::readFromTextFile(
         System::String^     fileName,
         ScoreDocument^%     ptrDoc)
 {
-    return ( ErrCode::FAILURE );
+    const   BsCore::ErrCode
+        retVal  = this->m_ptrObj->readFromTextFile(
+                        msclr::interop::marshal_as<std::string>(fileName),
+                        ptrDoc->toNativePointer()
+        );
+    return ( static_cast<ErrCode>(retVal) );
 }
 
 //----------------------------------------------------------------
