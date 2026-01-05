@@ -61,4 +61,11 @@ fromNativeBoolean(
     return ( b != BsCore::BOOL_FALSE );
 }
 
+
+//========================================================================
+
+typedef     BsCore::PlayerIndex     PlayerIndex;
+typedef     BsCore::FrameNumber     FrameNumber;
+
+
 }   //  End of namespace  BsWrap
