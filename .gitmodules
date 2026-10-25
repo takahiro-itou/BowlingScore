@@ -4,3 +4,6 @@
 [submodule "WpfHelper"]
 	path = WpfHelper
 	url  = ../BowlingScoreWpfHelper.git
+[submodule "Wrapper"]
+	path = Wrapper
+	url  = ../BowlingScoreWrapper.git
