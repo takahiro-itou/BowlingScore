@@ -22,14 +22,5 @@ Private Sub mnuRunCount_Click(sender As Object, e As EventArgs) Handles _
 
 End Sub
 
-Private Sub SampleControl1_RunButtonClick(sender As Object, e As EventArgs) _
-    Handles SampleControl1.RunButtonClick
-''--------------------------------------------------------------------
-''    イベントハンドラ
-''
-''    ユーザーコントロールの「実行ボタンクリック」
-''--------------------------------------------------------------------
-
-End Sub
 
 End Class
