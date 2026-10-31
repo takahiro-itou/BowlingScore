@@ -19,7 +19,7 @@ Private Sub mnuRunCount_Click(sender As Object, e As EventArgs) Handles _
 ''--------------------------------------------------------------------
 ''    メニュー「実行」－「カウント」
 ''--------------------------------------------------------------------
-    RunCount(SampleControl1.InputText)
+
 End Sub
 
 Private Sub SampleControl1_RunButtonClick(sender As Object, e As EventArgs) _
@@ -29,7 +29,7 @@ Private Sub SampleControl1_RunButtonClick(sender As Object, e As EventArgs) _
 ''
 ''    ユーザーコントロールの「実行ボタンクリック」
 ''--------------------------------------------------------------------
-    RunCount(SampleControl1.InputText)
+
 End Sub
 
 End Class
