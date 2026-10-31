@@ -18,15 +18,6 @@
   </Window.Icon>
 
   <StackPanel Orientation="Vertical">
-    <WpfControl.Sample:SampleControl
-        x:Name="SampleControl1"
-        Height="112"
-        Margin="16,8,16,8"
-        ClearButtonLabel="{x:Static r:Strings.ButtonClear}"
-        InputLabel="{x:Static r:Strings.LabelInput}"
-        OutputLabel="{x:Static r:Strings.LabelOutput}"
-        RunButtonLabel="{x:Static r:Strings.ButtonRun}"
-    />
   </StackPanel>
 
 </Window>
