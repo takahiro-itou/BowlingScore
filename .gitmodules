@@ -1,8 +1,8 @@
 [submodule "Core"]
 	path = Core
 	url  = ../BowlingScoreLib.git
-[submodule "WpfHelper"]
-	path = WpfHelper
+[submodule "WpfModules"]
+	path = WpfModules
 	url  = ../BowlingScoreWpfHelper.git
 [submodule "Wrapper"]
 	path = Wrapper
