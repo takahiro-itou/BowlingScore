@@ -1,33 +1,43 @@
 
-msbuild -restore -t:Rebuild     ^
+setlocal
+set  script_dir=%~dp0
+
+CALL  "%script_dir%Config\Common.cnf.bat"
+
+set  target=Rebuild
+
+
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x64     ^
-    BowlingScoreView.sln
+    "%solution%.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x64     ^
-    BowlingScoreView.sln
+    "%solution%.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x86     ^
-    BowlingScoreView.sln
+    "%solution%.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x86     ^
-    BowlingScoreView.sln
+    "%solution%.sln"
 
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x64     ^
-    BowlingScoreView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x64     ^
-    BowlingScoreView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Release"  -p:Platform=x86     ^
-    BowlingScoreView.NetOld.sln
+    "%solution%.NetOld.sln"
 
-msbuild -restore -t:Rebuild     ^
+msbuild  -restore  -t:%target%  ^
     -p:Configuration="Debug"    -p:Platform=x86     ^
-    BowlingScoreView.NetOld.sln
+    "%solution%.NetOld.sln"
+
+endlocal
