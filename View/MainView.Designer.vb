@@ -32,7 +32,6 @@ Partial Class MainView
         Me.mnuRunCount = New ToolStripMenuItem()
 
         Me.OpenFileDialog1 = New OpenFileDialog()
-        Me.SampleControl1 = New WinFormsControl.SampleControl()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.mnuMain.SuspendLayout()
         Me.SuspendLayout()
@@ -72,13 +71,6 @@ Partial Class MainView
         resources.ApplyResources(Me.OpenFileDialog1, "OpenFileDialog1")
 
         '
-        ' SampleControl1
-        '
-        resources.ApplyResources(SampleControl1, "SampleControl1")
-        SampleControl1.InputText = ""
-        SampleControl1.Name = "SampleControl1"
-        SampleControl1.OutputText = ""
-        '
         ' DataGridView1
         '
         resources.ApplyResources(Me.DataGridView1, "DataGridView1")
@@ -91,7 +83,6 @@ Partial Class MainView
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = AutoScaleMode.None
-        Me.Controls.Add(Me.SampleControl1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.mnuMain)
         Me.MainMenuStrip = Me.mnuMain
@@ -104,7 +95,6 @@ Partial Class MainView
 
     End Sub
 
-    Friend WithEvents SampleControl1 As WinFormsControl.SampleControl
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents mnuMain As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
