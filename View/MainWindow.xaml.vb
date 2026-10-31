@@ -6,14 +6,11 @@ Imports System.Windows.Media.Imaging
 
 Public Class MainWindow
 
-Private m_model As MySampleModel
-
 Public Sub New()
 ''--------------------------------------------------------------------
 ''    コンストラクタ
 ''--------------------------------------------------------------------
     InitializeComponent()
-    Me.m_model = New MySampleModel()
 End Sub
 
 
