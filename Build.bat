@@ -10,3 +10,5 @@ set  target=Build
 msbuild  -restore  -t:%target%  ^
     -p:Configuration=%config%   -p:Platform=x64     ^
     "%solution%.sln"
+
+endlocal
