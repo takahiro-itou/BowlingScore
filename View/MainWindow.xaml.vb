@@ -14,7 +14,6 @@ Public Sub New()
 ''--------------------------------------------------------------------
     InitializeComponent()
     Me.m_model = New MySampleModel()
-    SampleControl1.ViewModel = New WpfControl.Sample.SampleViewModel(m_model)
 End Sub
 
 

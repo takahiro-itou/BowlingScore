@@ -4,10 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="clr-namespace:ViewVb"
-    xmlns:r="clr-namespace:ViewVb.Lang"
+    xmlns:local="clr-namespace:BowlingScoreView"
     xmlns:WpfControl.Sample="clr-namespace:WpfControl.Sample;assembly=WpfControl"
-    Title="{x:Static r:Strings.MainWindowTitle}"
+    Title="Main Window"
     Height="448" Width="384"
 >
   <Window.Icon>
